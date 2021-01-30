@@ -2,6 +2,7 @@
 import cv2
 from pathlib import Path
 import os
+#image = cv2.imread("untitled2.png", 0)
 
 def blknes(myFrameImg) :
     """Percentage of blackness in an image
