@@ -10,7 +10,7 @@ def blknes(myFrameImg) :
     1920*1080px full HD, by default frames are 1280*720px
     100%Black = 1280*720px
     0%Black = 0px"""
-    imageFr = cv2.imread(myFrameImg, 0)
+    imgSh = cv2.imread(myFrameImg)
     counterFr = cv2.countNonZero(imageFr)
     return -100*(counterFr-2073600)/2073600
 
