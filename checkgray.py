@@ -7,8 +7,9 @@ import os
 #print(count)
 def blknes(myFrameImg) :
     """Percentage of blackness in an image
-    100%Black = 2073600px
-    100%Black = 0px"""
+    1920*1080px full HD, by default frames are 1280*720px
+    100%Black = 1280*720px
+    0%Black = 0px"""
     imageFr = cv2.imread(myFrameImg, 0)
     counterFr = cv2.countNonZero(imageFr)
     return -100*(counterFr-2073600)/2073600
