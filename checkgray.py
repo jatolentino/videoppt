@@ -11,7 +11,7 @@ def blknes(myFrameImg) :
     100%Black = 1280*720px
     0%Black = 0px"""
     imgSh = cv2.imread(myFrameImg)
-    counterFr = cv2.countNonZero(imageFr)
+    h, w, c= imgSh.shape # height, width, channel of image
     return -100*(counterFr-2073600)/2073600
 
 mydir=Path(r'F:\Future MS\Scripts\New\New folder')
