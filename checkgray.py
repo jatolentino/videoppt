@@ -14,9 +14,10 @@ def blknes(myFrameImg) :
     h, w, c= imgSh.shape # height, width, channel of image
     imageFr = cv2.imread(myFrameImg, 0)
     counterFr = cv2.countNonZero(imageFr)
-    return -100*(counterFr-2073600)/2073600
+    blkDeg = -100*(counterFr-h*w)/(h*w)
+    return blkDeg
 
-mydir=Path(r'F:\Future MS\Scripts\New\New folder')
+mydir=Path(r'F:\Path\To\Video\directory')
 imgName=[i for i in os.listdir(mydir) if i.endswith(".png")]
 
 print(imgName)
