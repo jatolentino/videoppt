@@ -7,7 +7,8 @@ import os
 #print(count)
 def blknes(myFrameImg) :
     """Percentage of blackness in an image
-    1920*1080px full HD, by default frames are 1280*720px
+    1920*1080px or full HD, 
+    by default frames are 1280*720px or 720px
     100%Black = 1280*720px
     0%Black = 0px"""
     imgSh = cv2.imread(myFrameImg)
