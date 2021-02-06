@@ -12,7 +12,7 @@ def blknes(myFrameImg) :
     100%Black = 1280*720px
     0%Black = 0px"""
     imgSh = cv2.imread(myFrameImg)
-    h, w, c= imgSh.shape # height, width, channel of image
+    h, w, c= imgSh.shape            # height, width, channel of image
     imageFr = cv2.imread(myFrameImg, 0)
     counterFr = cv2.countNonZero(imageFr)
     blkDeg = -100*(counterFr-h*w)/(h*w)
