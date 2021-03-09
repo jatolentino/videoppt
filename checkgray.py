@@ -1,4 +1,5 @@
-#pip install opencv-python
+# Checking gray scale
+# pip install opencv-python
 import cv2
 from pathlib import Path
 import os
