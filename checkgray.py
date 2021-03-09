@@ -23,6 +23,5 @@ mydir=Path(r'F:\Path\To\Video\directory')
 imgName=[i for i in os.listdir(mydir) if i.endswith(".png")]
 
 print(imgName)
-
 print([blknes(x) for x in imgName])
 print(all(blknes(x) > 70 for x in imgName))
